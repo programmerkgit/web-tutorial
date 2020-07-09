@@ -1,9 +1,10 @@
 window.onload = () => {
-  const el = document.getElementById('count-up');
-  el.addEventListener('click', () => {
-    const countEl = document.getElementById('count');
-    let count = Number(countEl.textContent);
-    count += 1;
+
+  /* GET COUNT UP BUTTON */
+  const btn = document.getElementById('count-up-btn');
+  const countEl = document.getElementById('counter');
+  btn.addEventListener('click', () => {
+    const count = Number(countEl.textContent) + 1;
     countEl.textContent = count.toString();
   });
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First Web Tutorial</h1>
+<p>Try count up button by plain html and javascript.</p>
+<div>
+    <button id="count-up-btn"> COUNT UP BUTTON</button>
+    <div style="display: flex">
+        <div>Count:</div>
+        <div id="counter">0</div>
+    </div>
+</div>
+
+<script rel="script">
+  /* GET COUNT UP BUTTON */
+  const btn = document.getElementById('count-up-btn');
+  const countEl = document.getElementById('counter');
+  btn.addEventListener('click', () => {
+    const count = Number(countEl.textContent) + 1;
+    countEl.textContent = count.toString();
+  });
+</script>
+
+</body>
+</html>
+
